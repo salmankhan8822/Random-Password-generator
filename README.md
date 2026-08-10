@@ -1,34 +1,44 @@
-# 🔑 Random Password Generator
+# 🔐 Password Generator
 
-A simple and secure **Random Password Generator** built with **HTML, CSS, and JavaScript**.  
-This tool allows users to quickly generate strong passwords with customizable options, making it ideal for improving security and avoiding weak passwords.
+A modern and responsive Password Generator built with **HTML, CSS, JavaScript, and Bootstrap 5**.
 
----
+This project allows users to generate customizable passwords by selecting the desired password length and character types.
 
-## 🚀 Features
-- Generate **random strong passwords** instantly  
-- Choose password **length**  
-- Option to include:
-  - ✅ Uppercase Letters  
-  - ✅ Lowercase Letters  
-  - ✅ Numbers  
-  - ✅ Special Characters  
-- One-click **copy to clipboard** feature  
-- Responsive design (works on desktop & mobile)
+Live Demo
+https://generate-random-password-six.vercel.app/
 
----
+## ✨ Features
+
+- 🔐 Generate random passwords
+- 📏 Adjustable password length from 1 to 30 characters
+- 🔤 Include lowercase letters
+- 🔠 Include uppercase letters
+- 🔢 Include numbers
+- 🔣 Include special symbols
+- 📋 Copy generated password to clipboard
+- ⚡ Instant password generation
+- 📱 Fully responsive design
+- 🎨 Modern and clean user interface
+- 🚫 Validation when no character type is selected
 
 ## 🛠️ Technologies Used
-- **HTML5** – for structure  
-- **CSS3** – for styling and responsiveness  
-- **JavaScript (ES6)** – for logic and interactivity  
 
----
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Bootstrap 5
 
-## 📂 Project Structure
-```bash
-random-password-generator/
-│── index.html       # Main HTML file
-│── style.css        # Styling
-│── script.js        # Password generation logic
-│── README.md        # Project documentation
+## 📚 Concepts Practiced
+
+- DOM Manipulation
+- JavaScript Events
+- Event Listeners
+- Conditional Logic
+- Random Number Generation
+- String Manipulation
+- Checkbox Handling
+- Range Input Handling
+- Clipboard API
+- Functions
+- Variables and Constants
+- Responsive Web Design
