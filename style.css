@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(99, 102, 241, 0.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(14, 165, 233, 0.3),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #0f172a, #1e293b);
+
+  color: #1e293b;
+}
+
+/* Main Card */
+
+.password-card {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 35px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 24px;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.password-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+/* Security Icon */
+
+.security-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+/* Heading */
+
+h1 {
+  color: #0f172a;
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+}
+
+/* Password Output */
+
+.password-output {
+  padding: 6px;
+
+  background: #f1f5f9;
+
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+}
+
+.password-output .form-control {
+  border: none;
+  background: transparent;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  padding: 14px;
+
+  box-shadow: none;
+}
+
+.password-output .form-control::placeholder {
+  color: #94a3b8;
+}
+
+.copy-btn {
+  border: none;
+
+  min-width: 52px;
+
+  border-radius: 10px !important;
+
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+/* Length Badge */
+
+.length-badge {
+  min-width: 40px;
+
+  padding: 6px 12px;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-weight: 700;
+}
+
+/* Range */
+
+.form-range {
+  cursor: pointer;
+}
+
+/* Options */
+
+.options-section {
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+}
+
+.option-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.option-row:last-child {
+  border-bottom: none;
+}
+
+.option-row label {
+  cursor: pointer;
+}
+
+.form-check-input {
+  width: 2.5em !important;
+  height: 1.3em;
+
+  cursor: pointer;
+}
+
+/* Generate Button */
+
+.generate-btn {
+  min-height: 52px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+
+  transition: all 0.25s ease;
+}
+
+.generate-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.35);
+}
+
+.generate-btn:active {
+  transform: translateY(0);
+}
+
+/* Small Screens */
+
+@media (max-width: 576px) {
+  .password-card {
+    padding: 25px 20px;
+
+    border-radius: 20px;
+  }
+
+  .security-icon {
+    width: 60px;
+    height: 60px;
+
+    font-size: 27px;
+  }
+
+  .options-section {
+    padding: 16px;
+  }
+
+  .option-row {
+    padding: 12px 0;
+  }
+
+  .password-output .form-control {
+    font-size: 15px;
+  }
+}
+
+/* Extra Small Screens */
+
+@media (max-width: 400px) {
+  .password-card {
+    padding: 22px 15px;
+  }
+
+  .option-row label {
+    font-size: 14px;
+  }
+
+  .option-row small {
+    font-size: 12px;
+  }
+}
